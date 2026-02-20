@@ -1,0 +1,19 @@
+{
+  "name": "@agent-infra/fintech-core-agents",
+  "version": "1.0.0",
+  "description": "core-agents for FinTech",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": ["fintech", "core-agents", "agent", "ai"],
+  "author": "Yoshi Kondo <yoshi@musicailab.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yksanjo/fintech-core-agents.git"
+  }
+}

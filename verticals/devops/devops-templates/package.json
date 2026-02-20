@@ -1,0 +1,19 @@
+{
+  "name": "@agent-infra/devops-templates",
+  "version": "1.0.0",
+  "description": "templates for DevOps",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": ["devops", "templates", "agent", "ai"],
+  "author": "Yoshi Kondo <yoshi@musicailab.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yksanjo/devops-templates.git"
+  }
+}
