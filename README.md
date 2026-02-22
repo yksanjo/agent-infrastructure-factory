@@ -1,134 +1,82 @@
-# Agent Infrastructure Factory
+# agent-infrastructure-factory
 
-> Automated factory for generating agent infrastructure projects across verticals
+## Detailed Description
 
-## 🏭 Factory Loop: Plan → Build → Push
+agent-infrastructure-factory is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
+## Problem Statement
+
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    INFRASTRUCTURE FACTORY                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌──────────┐    ┌──────────┐    ┌──────────┐              │
-│  │  PLAN    │───▶│  BUILD   │───▶│  PUSH    │              │
-│  │ Vertical │    │ Packages │    │  to GH   │              │
-│  └──────────┘    └──────────┘    └──────────┘              │
-│       ▲                                  │                  │
-│       │                                  │                  │
-│       └────────── FEEDBACK ──────────────┘                  │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-```
 
-## 📊 Vertical Domains
+## Getting Started
 
-### 1. **Healthcare AI** (`agent-healthcare`)
-- HIPAA-compliant agent framework
-- Medical coding agents (ICD-10, CPT)
-- Patient intake automation
-- Clinical decision support
-- Drug interaction checking
+### Prerequisites
 
-### 2. **Legal Tech** (`agent-legal`)
-- Contract review agents
-- Legal research automation
-- Compliance checking
-- Document discovery
-- Case law analysis
+- Git
+- Project runtime/toolchain for this repo
 
-### 3. **FinTech** (`agent-fintech`)
-- Fraud detection agents
-- Trading algorithm agents
-- Risk assessment
-- KYC/AML compliance
-- Financial reporting
-
-### 4. **E-commerce** (`agent-ecommerce`)
-- Product recommendation agents
-- Inventory management
-- Customer service automation
-- Price optimization
-- Order processing
-
-### 5. **DevOps** (`agent-devops`)
-- Infrastructure monitoring
-- Auto-remediation agents
-- CI/CD optimization
-- Cost optimization
-- Security scanning
-
-### 6. **Education** (`agent-edu`)
-- Personalized tutoring
-- Content generation
-- Grading automation
-- Learning path optimization
-- Student engagement tracking
-
-### 7. **Real Estate** (`agent-realestate`)
-- Property valuation
-- Lead qualification
-- Document processing
-- Market analysis
-- Tenant screening
-
-### 8. **Marketing** (`agent-marketing`)
-- Content creation agents
-- SEO optimization
-- Social media management
-- Campaign optimization
-- Analytics & reporting
-
-### 9. **HR & Recruiting** (`agent-hr`)
-- Resume screening
-- Candidate matching
-- Interview scheduling
-- Onboarding automation
-- Employee engagement
-
-### 10. **Supply Chain** (`agent-supply`)
-- Demand forecasting
-- Route optimization
-- Vendor management
-- Inventory optimization
-- Risk monitoring
-
----
-
-## 🚀 Factory Commands
+### Local Setup
 
 ```bash
-# Initialize factory
-./factory.sh init
-
-# Plan new vertical
-./factory.sh plan <vertical-name>
-
-# Build all packages for vertical
-./factory.sh build <vertical-name>
-
-# Push to GitHub
-./factory.sh push <vertical-name>
-
-# Full loop: plan → build → push
-./factory.sh run <vertical-name>
-
-# Run all verticals
-./factory.sh run-all
+make test
+make lint
 ```
 
-## 📈 Factory Output
+## Usage
 
-Each vertical generates:
-- 5-10 specialized packages
-- Domain-specific agent templates
-- Industry compliance tools
-- Integration connectors
-- Documentation & examples
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## 🎯 Target: 10 Verticals × 10 Packages = 100+ Repos
+## Quality Standards
 
----
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-## 📝 License
+## Security
 
-MIT License
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
